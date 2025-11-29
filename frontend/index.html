@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>image gallery</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <!-- header -->
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="/frontend/index.html">logo</a></li>
+                    <li><a href="/frontend/index.html">Home</a></li>
+                    <li><a href="register/index.html">Admin</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!-- main -->
+        <main>
+            <section class="image-filter">
+                <div class="year-select">
+                    <select id="yearSelect">
+                        <option value="">Select Year</option>
+                    </select>
+                </div>
+
+                <div class="location-select">
+                    <select id="locationSelect">
+                        <option value="">Select Location</option>
+                    </select>
+                </div>
+            </section>
+
+            <section class="image-gallery">
+                <div class="image-gallery-title">
+                    <p>Image Gallery</p>
+                    <p id="img-location">Location</p>
+                    <p id="img-year">2025</p>
+                </div>
+                <div id="loader" class="loader" style="display: none"></div>
+                <div id="gallery" class="image-gallery-images"></div>
+            </section>
+            <section class="image-navigation">
+                <button class="image-navigation-btn" id="prev-btn">
+                    Previous
+                </button>
+                <button class="image-navigation-btn" id="next-btn">Next</button>
+            </section>
+        </main>
+        <!-- footer -->
+        <footer>
+            <p>Copyright &copy; 2025 Image Gallery</p>
+        </footer>
+    </body>
+    <script src="script.js"></script>
+</html>

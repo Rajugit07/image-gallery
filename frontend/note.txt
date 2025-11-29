@@ -1,0 +1,57 @@
+frontend/
+│
+├── public/                         # Directly served to the browser
+│   ├── index.html
+│   ├── favicon.ico
+│   ├── robots.txt
+│   └── assets/
+│       ├── images/ 
+│       ├── fonts/
+│       └── icons/
+│
+├── src/                            # Your actual development source
+│   ├── pages/                      # Every page gets its own folder
+│   │   ├── home/
+│   │   │   ├── home.html
+│   │   │   ├── home.css
+│   │   │   └── home.js
+│   │   ├── login/
+│   │   │   ├── login.html
+│   │   │   ├── login.css
+│   │   │   └── login.js
+│   │   └── ...
+│   │
+│   ├── components/                 # Reusable HTML + JS + CSS UI parts
+│   │   ├── navbar/
+│   │   │   ├── navbar.html
+│   │   │   ├── navbar.css
+│   │   │   └── navbar.js
+│   │   ├── card/
+│   │   │   ├── card.html
+│   │   │   ├── card.css
+│   │   │   └── card.js
+│   │   └── ...
+│   │
+│   ├── styles/                     # Global CSS utilities and variables
+│   │   ├── reset.css
+│   │   ├── variables.css           # colors, spacing, typography
+│   │   ├── layout.css
+│   │   └── components.css
+│   │
+│   ├── api/                        # All backend API logic isolated
+│   │   ├── http.js                 # wrapper for fetch (timeout, headers)
+│   │   ├── authApi.js
+│   │   └── productApi.js
+│   │
+│   ├── utils/                      # Helpers and common logic
+│   │   ├── dom.js
+│   │   ├── validation.js
+│   │   └── storage.js
+│   │
+│   ├── app.js                      # App initialization
+│   └── router.js                   # Optional: simple routing for SPA-like behavior
+│
+├── dist/                           # Final minified build to deploy
+│
+├── package.json                    # Only if using build tools (optional)
+└── README.md
