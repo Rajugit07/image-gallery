@@ -11,7 +11,7 @@ form.addEventListener("submit", async (e) => {
 
     try {
         const response = await fetch(
-            "http://localhost:8000/api/v1/user/register",
+            "http://13.204.8.22/api/v1/user/register",
             {
                 method: "POST",
                 headers: {

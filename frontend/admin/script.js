@@ -26,7 +26,7 @@ form.addEventListener("submit", async (e) => {
 
     try {
         showLoader();
-        const res = await fetch("http://localhost:8000/api/v1/image/upload", {
+        const res = await fetch("http://13.204.8.22/api/v1/image/upload", {
             method: "POST",
             body: formData,
         });
@@ -54,7 +54,7 @@ const logoutBtn = document.getElementById("logoutBtn");
 
 logoutBtn.addEventListener("click", async () => {
     try {
-        const res = await fetch("http://localhost:8000/api/v1/user/logout", {
+        const res = await fetch("http://13.204.8.22/api/v1/user/logout", {
             method: "POST",
             credentials: "include",
             headers: {
