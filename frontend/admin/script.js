@@ -26,7 +26,7 @@ form.addEventListener("submit", async (e) => {
 
     try {
         showLoader();
-        const res = await fetch("http://13.204.8.22/api/v1/image/upload", {
+        const res = await fetch("http://13.203.100.181/api/v1/image/upload", {
             method: "POST",
             body: formData,
         });

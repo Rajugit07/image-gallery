@@ -10,7 +10,7 @@ form.addEventListener("submit", async (e) => {
 
     try {
         const response = await fetch(
-            "http://13.204.8.22/api/v1/user/login",
+            "http://13.203.100.181/api/v1/user/login",
             {
                 method: "POST",
                 headers: {

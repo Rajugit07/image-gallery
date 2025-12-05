@@ -14,7 +14,7 @@ const limit = 8;
 
 async function dropDownFilters() {
     try {
-        const res = await fetch("http://13.204.8.22/api/v1/image/dropdown");
+        const res = await fetch("http://13.203.100.181/api/v1/image/dropdown");
         const data = await res.json();
 
         if (!data.success) return;
@@ -62,7 +62,7 @@ async function loadImages() {
     try {
         showLoader();
         const response = await fetch(
-            `http://13.204.8.22/api/v1/image/filter-images?${params.toString()}`
+            `http://13.203.100.181/api/v1/image/filter-images?${params.toString()}`
         );
 
         const data = await response.json();
